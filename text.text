@@ -1,0 +1,14 @@
+addAccountViewBtn.addEventListener('click', function(e){
+  e.preventDefault();
+  addAccountView.style.display = "block"; 
+  accountsView.style.display = "none"; 
+})
+accountsViewBtn.addEventListener('click', function(e){
+  e.preventDefault();
+  addAccountView.style.display = "none"; 
+  accountsView.style.display = "block"; 
+})
+
+let accountsViewBtn = document.querySelector('[href="accounts-view"]');
+createAccountsTable();
+let addAccountViewBtn = document.querySelector('[href="add-account-view"]');
